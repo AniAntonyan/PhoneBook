@@ -9,11 +9,11 @@ import javax.persistence.*;
 
 @Data
 @ToString
-@Entity
+@Entity // db-i het kap hastati
 public class Contact {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO) // db table  kap@ kodi  klassneri het
     private int id;
 
     private String name;
@@ -26,7 +26,7 @@ public class Contact {
     private Label phoneLabel;
 
 
-    @Column(nullable = false)
+    @Column(nullable = false) // chi kara null lini
     private String email;
 
     @Enumerated(EnumType.STRING)

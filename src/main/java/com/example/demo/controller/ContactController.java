@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("/api/v1/contact")
+@RestController // CRUD metodnern a parunakum
+@RequestMapping("/api/v1/contact") // service mapping
 public class ContactController {
 
     @Autowired
